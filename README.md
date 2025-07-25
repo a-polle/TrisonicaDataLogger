@@ -182,27 +182,6 @@ pip install windrose
 - `TRISONICA_LOG_DIR`: Default log directory
 - `TRISONICA_BAUD_RATE`: Default baud rate
 
-## Troubleshooting
-
-### Serial Connection Issues
-```bash
-# List available ports (macOS)
-ls /dev/cu.* /dev/tty.*
-
-# List available ports (Pi)
-ls /dev/ttyUSB* /dev/ttyACM*
-
-# Check permissions (Pi)
-sudo usermod -a -G dialout $USER
-```
-
-### Common Problems
-
-1. **No serial ports found**: Check USB connection and driver installation
-2. **Permission denied**: Add user to dialout group (Linux/Pi)
-3. **Import errors**: Run deployment script to install dependencies
-4. **Memory issues on Pi**: Reduce MAX_DATAPOINTS in configuration
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -214,10 +193,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## Support
-
-For issues and questions:
-- Check the troubleshooting section above
-- Review existing GitHub issues
-- Create a new issue with detailed description and logs
