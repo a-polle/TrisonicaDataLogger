@@ -4,11 +4,10 @@ Cross-platform data logging software for TriSonica Mini 550p ultrasonic wind sen
 
 ## Features
 
-- **Cross-platform support**: Optimized versions for macOS and Raspberry Pi
+- **Cross-platform support**: Currently MacOS and Raspberry Pi
 - **Real-time data collection**: Automatic sensor detection and data logging
-- **Rich visualization**: Time-series plots, wind roses, and statistical analysis
 - **Multiple data formats**: CSV, JSON, and tagged format support
-- **Professional UI**: Rich terminal interface on macOS, headless operation on Pi
+- **UI**: Terminal interface on macOS, headless operation on Pi
 - **Data quality assurance**: Built-in validation and error filtering
 
 ## Quick Start
