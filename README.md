@@ -1,4 +1,4 @@
-# TriSonica Mini 550p Data Logger
+# TriSonica Mini 550 Data Logger
 
 Cross-platform data logging software for TriSonica Mini 550p ultrasonic wind sensors on macOS and Raspberry Pi.
 
