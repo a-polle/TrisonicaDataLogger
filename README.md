@@ -52,7 +52,7 @@ TrisonicaDataLogger/
 
 ### Data Collection
 
-**macOS (with Rich UI):**
+**macOS (with UI):**
 ```bash
 # Auto-detect sensor
 ./run_trisonica.sh
