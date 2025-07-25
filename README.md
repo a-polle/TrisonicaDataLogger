@@ -1,14 +1,14 @@
 # TriSonica Mini 550p Data Logger
 
-Cross-platform data logging software for TriSonica Mini 550p ultrasonic wind sensors on macOS and Raspberry Pi.
+Cross-platform data logging software for TriSonica Mini 550p ultrasonic wind sensors across all major platforms.
 
 ## Features
 
-- **Cross-platform support**: Optimized versions for macOS and Raspberry Pi
+- **Complete cross-platform support**: macOS, Windows, Linux, and Raspberry Pi
+- **Platform-optimized tools**: Each platform has specialized features and optimizations
 - **Real-time data collection**: Automatic sensor detection and data logging
-- **Rich visualization**: Time-series plots, wind roses, and statistical analysis
 - **Multiple data formats**: CSV, JSON, and tagged format support
-- **Professional UI**: Rich terminal interface on macOS, headless operation on Pi
+- **Rich interfaces**: GUI on desktop platforms, headless operation for servers
 - **Data quality assurance**: Built-in validation and error filtering
 
 ## Quick Start
@@ -17,6 +17,23 @@ Cross-platform data logging software for TriSonica Mini 550p ultrasonic wind sen
 
 ```bash
 cd mac/
+chmod +x deploy.sh
+./deploy.sh
+./quick_start.sh
+```
+
+### Windows Setup
+
+```cmd
+cd windows\
+deploy.bat
+quick_start.bat
+```
+
+### Linux Setup
+
+```bash
+cd linux/
 chmod +x deploy.sh
 ./deploy.sh
 ./quick_start.sh
@@ -43,6 +60,18 @@ TrisonicaDataLogger/
 │   ├── deploy.sh          # macOS deployment
 │   ├── run_trisonica.sh   # Main launcher
 │   └── quick_start.sh     # Quick launcher
+├── windows/                # Windows-optimized version
+│   ├── datalogger.py      # Windows GUI logger with sound alerts
+│   ├── DataVis.py         # Windows file dialog integration
+│   ├── deploy.bat         # Windows deployment script
+│   ├── quick_start.bat    # Quick launcher
+│   └── run_trisonica.bat  # Main launcher
+├── linux/                  # Linux-optimized version
+│   ├── datalogger.py      # Linux logger with systemd integration
+│   ├── DataVis.py         # Linux file manager integration
+│   ├── deploy.sh          # Linux deployment with distro detection
+│   ├── quick_start.sh     # Quick launcher
+│   └── run_trisonica.sh   # Main launcher
 └── pi/                     # Raspberry Pi version
     ├── datalogger.py      # Headless logger
     ├── DataVis.py         # Lightweight visualization
@@ -53,7 +82,7 @@ TrisonicaDataLogger/
 
 ### Data Collection
 
-**macOS (with Rich UI):**
+**macOS (with UI):**
 ```bash
 # Auto-detect sensor
 ./run_trisonica.sh
@@ -181,6 +210,28 @@ pip install windrose
 - `TRISONICA_PORT`: Default serial port
 - `TRISONICA_LOG_DIR`: Default log directory
 - `TRISONICA_BAUD_RATE`: Default baud rate
+
+## Platform Optimizations
+
+### macOS Version
+- **Rich Terminal UI**: Real-time sparklines, wind compass, statistical tables
+- **High Performance**: 1000+ data points, 50Hz updates
+- **Development Features**: Enhanced debugging, system monitoring
+
+### Windows Version
+- **Sound Notifications**: Audio alerts for connection events
+- **Win32 API Integration**: Native Windows system integration
+- **GUI File Dialogs**: Windows-native file selection
+
+### Linux Version
+- **Desktop Notifications**: System notification integration
+- **systemd Service**: Background service support
+- **Distribution Detection**: Automatic package management
+
+### Raspberry Pi Version
+- **Headless Operation**: No GUI dependencies, minimal resource usage
+- **SD Card Friendly**: 10MB log rotation, optimized I/O
+- **Low Power**: Efficient data structures and processing
 
 ## License
 
