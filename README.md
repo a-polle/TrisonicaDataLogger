@@ -176,20 +176,7 @@ pip install windrose
 | `--show-raw` | Display raw data | false |
 | `--no-stats` | Disable statistics | false |
 
-### Environment Variables
-
-- `TRISONICA_PORT`: Default serial port
-- `TRISONICA_LOG_DIR`: Default log directory
-- `TRISONICA_BAUD_RATE`: Default baud rate
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
